@@ -1,0 +1,35 @@
+workflows:
+  ios-workflow:
+    name: Build iOS App
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      vars:
+        BUNDLE_ID: "com.test.saleh"
+        APP_STORE_CONNECT_ISSUER_ID: "6a946c68-5568-4f95-9e60-78ffde0c3a08"
+        APP_STORE_CONNECT_KEY_IDENTIFIER: "GBB4N45KP3"
+        APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(p8)
+        APP_STORE_CONNECT_TEAM_ID: "U32F58T538"
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter clean
+          flutter pub get
+      - name: Build iOS
+        script: |
+          flutter build ipa --release \
+            --build-name=1.0.0 \
+            --build-number=1 \
+            --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        api_key:
+          key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
+          issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+          private_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        submit_to_app_store: false
+        submit_to_testflight: true
