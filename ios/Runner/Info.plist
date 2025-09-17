@@ -1,11 +1,11 @@
-<!-- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Test</string>
+	<string>Need</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>test</string>
+	<string>need</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -45,95 +45,5 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-</dict>
-</plist> -->
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>Runner</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
-	<key>CFBundleVersion</key>
-	<string>15</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-
-	<!-- Launch Screen -->
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-
-	<!-- Supported Orientations (لازم كل الاتجاهات) -->
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-
-	<!-- Permissions -->
-	<key>NSDocumentsDirectoryUsageDescription</key>
-	<string>لتخزين ملفات التطبيق</string>
-	<key>NSDownloadsDirectoryUsageDescription</key>
-	<string>لتنزيل المحتوى</string>
-
-	<key>NSCameraUsageDescription</key>
-	<string>We need access to the camera to capture photos and videos.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>We need access to the microphone to record audio.</string>
-
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We need access to your photo library to select and upload photos.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>We need permission to save photos to your photo library.</string>
-
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need your location while the app is in use.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We need your location at all times for app functionality.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We need your location both in background and foreground.</string>
-
-	<key>NSContactsUsageDescription</key>
-	<string>We need access to your contacts for app functionality.</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>We need access to your calendar events.</string>
-	<key>NSRemindersUsageDescription</key>
-	<string>We need access to reminders.</string>
-
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>We need Bluetooth access to connect with nearby devices.</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>We need Bluetooth access for communication with peripherals.</string>
-
-	<key>NSMotionUsageDescription</key>
-	<string>We need access to motion sensors for better app experience.</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>We need access to update your health data.</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>We need access to read your health data.</string>
-
-	<key>NSAppleMusicUsageDescription</key>
-	<string>We need access to your media library to play and manage music.</string>
-
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>We need access to speech recognition for voice features.</string>
-
-	<key>NSUserTrackingUsageDescription</key>
-	<string>We use tracking to provide personalized ads and better experience.</string>
 </dict>
 </plist>
